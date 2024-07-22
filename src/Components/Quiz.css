@@ -1,0 +1,30 @@
+.quiz {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.question-label {
+    font-family: 'Bebas Neue';
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 5px 2px #474747;
+    margin-bottom: 40px;
+  }
+  .radio label {
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 2rem;
+  }
+  .singular {
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
