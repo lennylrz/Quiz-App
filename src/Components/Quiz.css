@@ -5,9 +5,18 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 60px;
+    margin-top: 20px;
 }
 
+input[type='radio'] {
+  display: none;
+}
+
+input[type='radio']:checked + label {
+  background-color: #005B97;
+  color: white;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 .question-label {
     font-family: 'Bebas Neue';
     font-size: 3rem;
@@ -16,10 +25,16 @@
     margin-bottom: 40px;
   }
   .radio label {
-    color: white;
-    font-weight: bold;
+    color: #005B97;
+    font-weight: bolder;
     font-style: italic;
-    font-size: 2rem;
+    font-size: 1.75rem;
+    padding: 10px;
+    border-radius: 20px;
+    border: #005B97 4px solid;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    width: 200px;
   }
   .singular {
     margin-bottom: 30px;
@@ -27,4 +42,56 @@
     align-items: center;
     justify-content: space-around;
   }
+  .quiz button {
+  appearance: none;
+  background-color: #FFFFFF;
+  border-radius: 40em;
+  border-style: none;
+  box-shadow: #ADCFFF 0 -12px 6px inset;
+  box-sizing: border-box;
+  color: black;
+  cursor: pointer;
+  display: inline-block;
+  font-family: -apple-system,sans-serif;
+  font-size: 1.2rem;
+  font-weight: 700;
+  letter-spacing: -.24px;
+  margin: 0;
+  outline: none;
+  padding: 1rem 1.3rem;
+  quotes: auto;
+  text-align: center;
+  text-decoration: none;
+  transition: all .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.quiz button:hover {
+  background-color: #FFC229;
+  box-shadow: #FF6314 0 -6px 8px inset;
+  transform: scale(1.125);
+}
+
+.quiz button:active {
+  transform: scale(1.025);
+}
+
+@media (min-width: 768px) {
+  .quiz button {
+    font-size: 1.5rem;
+    padding: .75rem 2rem;
+  }
+}
+.wrong-answer {
+  background-color: red !important;
+  transition: background-color none;
+  border: red 3px solid !important;
+}
+.correct-answer {
+  background-color: green !important;
+  color: white !important;
+  border: green 3px solid !important;
+}
 
