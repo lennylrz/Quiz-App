@@ -5,7 +5,7 @@
     align-items: center;
     justify-content: space-between;
     flex-direction: column;
-    margin-top: 20px;
+    margin-top: 4px;
 }
 
 input[type='radio'] {
@@ -22,9 +22,16 @@ input[type='radio']:checked + label {
     font-size: 3rem;
     color: white;
     text-shadow: 3px 5px 2px #474747;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
   }
-  .radio label {
+  .count-label {
+    font-family: 'Bebas Neue';
+    font-size: 1.5rem;
+    color: white;
+    margin-bottom: 15px;
+
+  }
+.radio label {
     color: #005B97;
     font-weight: bolder;
     font-style: italic;
@@ -36,7 +43,7 @@ input[type='radio']:checked + label {
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
     width: 200px;
   }
-  .singular {
+.singular {
     margin-bottom: 30px;
     display: flex;
     align-items: center;
@@ -86,12 +93,13 @@ input[type='radio']:checked + label {
 }
 .wrong-answer {
   background-color: red !important;
-  transition: background-color none;
-  border: red 3px solid !important;
+  transition: background-color 0.5s ease, border-color 0.5s ease !important;
+  border: red 4px solid !important;
 }
 .correct-answer {
   background-color: green !important;
   color: white !important;
-  border: green 3px solid !important;
+  border: green 4px solid !important;
+  transition: background-color 0.5s ease, border-color 0.5s ease !important;
 }
 

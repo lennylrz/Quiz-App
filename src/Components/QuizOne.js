@@ -31,10 +31,14 @@ function QuizOne() {
     const [currentIndex, setCurrentIndex] = useState(0);
     const [selectedAnswer, setSelectedAnswer] = useState('');
     const [isSubmitted, setIsSubmitted] = useState(false);
+    const [correctAnswer, setCorrectAnswer] = useState(0)
 
     const currentQuestion = questions[currentIndex];
 
     function handleSubmit() {
+        if(selectedAnswer === currentQuestion.correct) {
+            setCorrectAnswer(correctAnswer + 1)
+        }
         if(selectedAnswer) {
             setIsSubmitted(true)
         } else {
@@ -56,10 +60,10 @@ function QuizOne() {
     }
     } 
 
-
     return(
         <div className="quiz">
             <span className="question-label">{currentQuestion.question}</span>
+            <span className="count-label">{correctAnswer}</span>
             <div className="radio">
            {currentQuestion.options.map((option, index) => {
              return (<div className="singular" key={index}>
