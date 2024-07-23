@@ -20,7 +20,7 @@ function QuizFour() {
         {
             question: 'Which film features a famous scene where a character says, "I am your father"?',
             options: ['Star Wars: Episode V', 'Star Wars: Episode IV', 'Star Wars: Episode VI', 'Star Wars: Episode III', 'Star Wars: Episode II'],
-            correct: 'Star Wars: Episode V - The Empire Strikes Back'
+            correct: 'Star Wars: Episode V'
         },
         {
             question: 'Which film, directed by Quentin Tarantino, is known for its nonlinear narrative and features the characters Vincent Vega and Jules Winnfield?',
